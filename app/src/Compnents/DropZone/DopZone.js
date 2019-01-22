@@ -30,32 +30,32 @@ class MyDropzone extends React.Component {
         let that = this;
         let tdata = [];
         axios.get('/api/data/allData')
-        .then(function (response) {
-            console.log(response );
-            response.data.forEach(element => {
-                // console.log(element.communication_type)
-                let obj = {
-                    person_id: element.person_id,
-                    communication_date: element.communication_date,
-                    communication_type: element.communication_type,
-                    reason: element.reason,
-                    direction: element.direction
+            .then(function (response) {
+                console.log(response);
+                response.data.forEach(element => {
+                    // console.log(element.communication_type)
+                    let obj = {
+                        person_id: element.person_id,
+                        communication_date: element.communication_date,
+                        communication_type: element.communication_type,
+                        reason: element.reason,
+                        direction: element.direction
 
-                }
-                // console.log(obj);
-                tdata.push(obj);
-            });
+                    }
+                    // console.log(obj);
+                    tdata.push(obj);
+                });
                 that.setState({
                     tableData: tdata
 
                 });
-                
-            
-            console.log(that.state.tableData)
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+
+
+                console.log(that.state.tableData)
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
     onDrop = (acceptedFiles, rejectedFiles) => {
@@ -112,7 +112,7 @@ class MyDropzone extends React.Component {
 
                 });
                 alert('Successfully Uploaded');
-                alert('Please wait a moment for the db to populate the table')
+                alert('Please wait a moment for the database to populate the table')
                 this.getData();
 
 
@@ -161,13 +161,13 @@ class MyDropzone extends React.Component {
                         )
                     }}
                 </Dropzone>
-                <br/>
+                <br />
                 <hr />
-                <br/>
+                <br />
                 <button className="clearbtn" onClick={this.clear} >Clear DB</button>
-                <br/>
-                <hr/>
-                <br/>
+                <br />
+                <hr />
+                <br />
                 <ReactTable
                     data={this.state.tableData}
                     resolveData={data => data.map(row => row)}
