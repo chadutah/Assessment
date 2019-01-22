@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://hidden-basin-32068.herokuapp.com/:3001",
+  "proxy": "https://hidden-basin-32068.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
