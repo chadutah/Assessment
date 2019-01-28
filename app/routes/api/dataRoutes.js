@@ -10,6 +10,14 @@ router.route("/allData")
     .get(dataController.findAll)
     .post(dataController.create)
     .delete(dataController.remove);
+router.route("/:communicationType")
+    .get(dataController.findAllWhereType);
+router.route("/:reason")
+    .get(dataController.findAllWhereType);
+
+router.route("/count")
+    .get(dataController.findAllCount);
+
 console.log("working");
 
 

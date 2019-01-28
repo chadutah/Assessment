@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
 
 .App-header {
   background-color: whitesmoke;
@@ -17,26 +13,77 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.nav-wrapper {
+  background-color: whitesmoke;
+  height: 60px;
+  box-shadow: 0 5px 5px black;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  border: solid 1px black;
+  border-radius: 5px;
+
+}
+.brand-logo{
+  float: left;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.right {
+  display: inline;
+  text-decoration: none;
+  float: right;
+  margin-right: 180px;
+}
+li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 35px;
+  font-size: 35px;
+  font-weight: bolder;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover { 
+  color: red;
+}
 .table {
+  margin: 0 auto;
   background-color: lightgrey;
   color: black;
   border: solid black 2px;
   border-radius: 25px;
-  box-shadow: 0 10px 50px black;
+  box-shadow: 0 5px 5px black;
   margin-top: 20px;
+  width: 80%;
+  margin-bottom: 40px;
 }
 .dropzone {
+  margin: 0 auto;
+  width: 40%;
   color: black;
-  background-color: grey;
+  background-color: whitesmoke;
   height: 150px;
   padding-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
   border: solid black 2px;
   border-radius: 25px;
-  box-shadow: 0 10px 50px black;
+  box-shadow: 0 5px 1px black;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+#g-chart2 {
+  float: right;
+  margin-right: 15%;
+}
+#g-chart1 {
+  float: left;
 }
 .clearbtn {
   height: 50px;
@@ -44,8 +91,120 @@
   width: 150px;
   border: solid black 2px;
   border-radius: 25px;
-  box-shadow: 0 10px 50px black;
+  box-shadow: 0 5px 5px black;
   background-color: red;
+}
+.form-style-7{
+	max-width:400px;
+	margin:50px auto;
+	background:#fff;
+	border-radius:2px;
+	padding:20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1{
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: black;
+	font-size:x-large;
+}
+.form-style-7 ul{
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+.form-style-7 li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.form-style-7 li:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.form-style-7 li > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: rgb(34, 34, 34);
+	font-size: 14px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus 
+{
+}
+.form-style-7 li > span{
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: rgb(45, 45, 45);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.form-style-7 textarea{
+	resize:none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]{
+	background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+	background: #6B9FFF;
+	color:#fff;
 }
 
 .App-link {
